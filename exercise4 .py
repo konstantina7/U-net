@@ -29,7 +29,7 @@ def max_pool(x):
     return tf.nn.max_pool(x, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='VALID')
 
 def crop_and_concat(layer, inx, target):
-    offset = (inx.get_shape()[1] - target)//2
+    offset = (inx.get_shape()[1] - target)//2 
     x_crop = inx[:,
                  offset:target + offset,
                  offset:target + offset
