@@ -11,7 +11,7 @@ class Data:
       self.test_labels = [data["/test_label_{}".format(i)][:] for i in range(3)]
     
     self.input_resolution = 300
-    self.label_resolution = 116
+    self.label_resolution = 116 
 
     self.offset = (300 - 116) // 2
 
